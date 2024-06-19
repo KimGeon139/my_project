@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GeonKim's Portfolio</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/video.css" />
     <script src="/script/works.js" defer></script>
+    <dotlottie-player
+      id="lottie-1 "
+      class="lottie"
+      src="./asset/lottie.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay
+    ></dotlottie-player>
   </head>
   <body>
     <div class="section section--nav">
@@ -17,7 +27,9 @@
         <div class="nav--right">
           <div class="nav button">Profile</div>
           <div class="nav button">Works</div>
-          <div class="nav button home">Home</div>
+          <div class="nav button home" onclick="location.href='/index.html'">
+            Home
+          </div>
         </div>
       </div>
     </div>
@@ -32,17 +44,54 @@
         <div class="works--img works--img-bcd">
           <div>University</div>
           <div class="a">
-            <img src="./asset/designWork.jpg" id="lastClone" />
-            <img src="./asset/pattern.jpg" />
-            <img src="./asset/lessismore.jpg" id="firstClone" />
+            <img class="bcdimg" src="./asset/designWork.jpg" id="lastClone" />
+            <img class="bcdimg" src="./asset/pattern.jpg" />
+            <img class="bcdimg" src="./asset/lessismore.jpg" id="firstClone" />
           </div>
           <img src="/asset/prev.png" id="prevBtn" />
           <img src="/asset/next.png" id="nextBtn" />
+          <div class="learnmore" onclick="location.href='./bcd/index.html'">
+            Learn More->
+          </div>
+          <div class="works--subt">Basic Communication Design</div>
         </div>
-        <div class="works--subt">Basic Communication Deign</div>
+        <div class="continer container--works-bcd">
+          <div class="works--img works--img-bcd">
+            <div>University</div>
+            <div class="video">
+              <img class="bcdimg" src="./asset/vdg-2.jpg" />
+            </div>
+
+            <div class="learnmore" onclick="location.href='./vdg/index.html'">
+              Learn More->
+            </div>
+            <div class="works--subt">Video Graphy</div>
+          </div>
+        </div>
+        <div class="continer container--works-bcd">
+          <div class="works--img works--img-bcd">
+            <div>University</div>
+            <div class="video">
+              <img class="bcdimg" src="./asset/webDesign.jpg" />
+            </div>
+
+            <div class="learnmore" onclick="location.href='/index.html'">
+              Learn More->
+            </div>
+            <div class="works--subt">Web Media Design</div>
+          </div>
+        </div>
       </div>
-      <div class="continer container--works-vdg"></div>
-      <div class="continer container--works-wd"></div>
+    </div>
+    <div class="section section--footer footer">
+      <div class="container--footer">
+        <div class="email">cbx00936@gmail.com</div>
+        <div class="esns">
+          <div>instagram</div>
+          <div>youtube</div>
+          <div>twitter</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
