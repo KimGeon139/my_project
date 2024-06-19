@@ -99,6 +99,7 @@ img {
   display: flex;
   align-items: start;
   justify-content: center;
+  margin-bottom: 20rem;
 }
 
 .profile--text {
@@ -113,4 +114,24 @@ img {
 .name {
   margin-bottom: 1.5rem;
   font-size: 32px;
+}
+
+.footer {
+  color: #fff;
+  background-color: #000;
+}
+
+.email {
+  padding-top: 2rem;
+  margin-bottom: 48px;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.esns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  place-items: center;
+  padding-bottom: 10rem;
 }
