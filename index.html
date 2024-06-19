@@ -7,15 +7,6 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/video.css" />
     <script src="/script/works.js" defer></script>
-    <dotlottie-player
-      id="lottie-1 "
-      class="lottie"
-      src="./asset/lottie.json"
-      background="transparent"
-      speed="1"
-      loop
-      autoplay
-    ></dotlottie-player>
   </head>
   <body>
     <div class="section section--nav">
@@ -25,8 +16,13 @@
           <div class="nav nav--title">Portfolio</div>
         </div>
         <div class="nav--right">
-          <div class="nav button">Profile</div>
-          <div class="nav button">Works</div>
+          <div
+            class="nav button"
+            onclick="location.href='./profile/index.html'"
+          >
+            Profile
+          </div>
+          <div class="nav button btnWorks">Works</div>
           <div class="nav button home" onclick="location.href='/index.html'">
             Home
           </div>
@@ -39,7 +35,7 @@
       <div class="img--sub-t">Communication Design</div>
     </div>
     <div class="section works">
-      <div class="works--title">Works</div>
+      <div class="works--title" ib=" works">Works</div>
       <div class="continer container--works-bcd">
         <div class="works--img works--img-bcd">
           <div>University</div>
